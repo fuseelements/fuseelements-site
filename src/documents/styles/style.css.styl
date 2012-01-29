@@ -1,0 +1,111 @@
+// ====================================
+// Imports
+
+// nib: http://visionmedia.github.com/nib/
+@import 'nib'
+
+
+// ====================================
+// Configuration
+
+vendor-prefixes = webkit moz o official
+
+global-reset()
+
+text-size-adjust()
+  vendor('text-size-adjust', arguments)
+
+a(color)
+  a
+    color color
+    &:visited
+      color darken(color, 30%)
+    &:hover
+      color lighten(color, 30%)
+    &:focus
+      outline thin dotted
+    &:hover, &:active
+      outline 0
+
+fonts = 'Helvetica Neue', Arial, Helvetica, sans-serif
+
+primary-color = #221F72
+secondary-color = #5F5F5F
+accent-color = #D5E04E
+
+
+// ====================================
+// Styles
+
+
+html
+  font-size 100%
+  overflow-y scroll
+  text-size-adjust 100%
+
+body
+  background: linear-gradient(top, #CCC, #EEE)
+  font 14px/1.5em fonts
+
+header, footer
+  background-color secondary-color
+  color accent-color
+  font-weight bold
+  padding 10px 20px
+
+header
+  height 100px
+  position relative
+  a(accent-color)
+  a
+    absolute bottom 10px left 20px
+  img
+    float right
+
+footer
+  p
+    font-size 10px
+
+#main
+  a(primary-color)
+  background-color white
+  border 1px solid white
+  border-radius 5px
+  margin auto 0
+  margin 40px 20px
+  max-width 620px
+  padding 20px 80px
+  h1
+    color primary-color
+    font-size 24px
+    font-weight bold
+    padding 1em 0 0.25em 0
+    text-transform uppercase
+  h2
+    color secondary-color
+    font-weight bold
+    font-size 18px
+    padding-top 0.5em
+  ul
+    background-color lighten(accent-color, 70%)
+    border 1px solid accent-color
+    border-radius 5px
+    margin 0.5em 0
+    padding 1.2em
+  li
+    line-height 1em
+    margin-bottom 0.5em
+  ol
+    list-style-position inside
+    list-style-type decimal
+    padding 0.5em 1.2em 0
+    li
+      font-weight bold
+  p
+    color #202020
+
+
+/* iPhone [portrait + landscape] */
+@media only screen and (max-device-width: 480px)
+  #main
+    padding 20px

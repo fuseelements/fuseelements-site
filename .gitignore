@@ -19,14 +19,6 @@
 nbproject
 Thumbs.db
 
-# Dreamweaver added files
-_notes
-dwsync.xml
-
-# Komodo
-*.komodoproject
-.komodotools
-
 # Folders to ignore
 .hg
 .svn
@@ -34,7 +26,5 @@ dwsync.xml
 intermediate
 publish
 .idea
-
-# build script local files
-build/buildinfo.properties
-build/config/buildinfo.properties
+node_modules/
+out/

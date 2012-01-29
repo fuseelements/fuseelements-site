@@ -1,0 +1,29 @@
+!!! 5
+html(lang="en")
+  head
+    meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+		meta(http-equiv='content-type', content='text/html; charset=utf-8')
+    meta(name='viewport', content='width=device-width,initial-scale=1')
+    title= document.title
+    link(rel='stylesheet', href='styles/style.css', media='screen,projection')
+    script(src='vendor/modernizr-2.0.6.min.js')
+  body
+    header
+      img(src='images/logo.png', alt='Fuse Elements, LLC', height='98px', width='193px')
+      script(src='scripts/contactlink.js')
+
+    div#main(role='main')!= content
+
+    footer
+      p All content &copy; Fuse Elements, LLC. All rights reserved.
+
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
+    script
+      window.jQuery || document.write('<script src="vendor/jquery-1.7.1.min.js"><\\/script>')
+    script(defer, src='/vendor/h5b-plugins.js')
+    script
+      var _gaq=[['_setAccount','UA-25789132-1'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
