@@ -23,6 +23,9 @@ We design, build, operate, and enhance software applications using a wide range 
 * [Apple Mac OS X](http://developer.apple.com/devcenter/mac/index.action) using Objective-C
 * [Google Android](http://code.google.com/android/) using Java and Scala
 * [HTML 5](http://www.w3.org/TR/html5/) using [CSS](http://www.w3.org/Style/CSS/) and [JavaScript](http://www.ecmascript.org/)
+* [Ember.js](http://emberjs.com/)
+* [Google Web Toolkit](http://code.google.com/webtoolkit/)
+* [SproutCore](http://sproutcore.com/)
 
 ## Back-end Services
 
@@ -38,6 +41,7 @@ We design, build, operate, and enhance software applications using a wide range 
 * [Amazon Web Services](http://aws.amazon.com/)
 * [Cloudbees](http://www.cloudbees.com/)
 * [Cloud Foundry](http://www.cloudfoundry.com/)
+* [Engine Yard](http://www.engineyard.com/)
 * [Google App Engine](http://code.google.com/appengine/)
 * [Heroku](http://www.heroku.com/)
 * [Joyent Smart Machines](http://www.joyent.com/)
